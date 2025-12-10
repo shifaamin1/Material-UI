@@ -1,0 +1,53 @@
+/* Full page center */
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 100px;
+  min-height: 100vh;
+  background: #f6f9ff; 
+}
+
+/* White Card */
+.wrapper {
+  width: 400px;
+  background: #ffffff;
+  padding: 28px;
+  border-radius: 16px;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.06);
+  border: 1px solid #eef1ff;
+  animation: fadeIn 0.35s ease;
+}
+
+/* Button styling */
+.btn {
+  width: 100%;
+  margin-top: 20px;
+  background: #15124c;
+  color: white;
+  padding: 13px;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.btn:hover {
+  background: #2a274e;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(79, 70, 229, 0.25);
+}
+
+/* Smooth Fade Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
